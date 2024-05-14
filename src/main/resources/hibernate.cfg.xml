@@ -10,12 +10,13 @@
         <property name= "connection.username">postgres </property>
         <property name= "connection.password">1234 </property>
         <property name= "dialect"> org.hibernate.dialect.PostgreSQLDialect </property>
-        <property name= "hbm2ddl.auto"> create </property>
+        <property name= "hbm2ddl.auto"> update </property>
         <property name= "show_sql"> true </property>
-                <mapping class="com.tut.entity.Student"/>
-                <mapping class="com.tut.entity.Address"/>
-                <mapping class="com.tut.entity.Answer"/>
-                <mapping class="com.tut.entity.Question"/>
+               <property name="format_sql">true</property>
+                <mapping class="com.tut.entity.EmbeddableExe.Student"/>
+                <mapping class="com.tut.entity.EmbeddableExe.Address"/>
+                <mapping class="com.tut.entity.OneToOne_OneToMany.Answer"/>
+                <mapping class="com.tut.entity.OneToOne_OneToMany.Question"/>
                 <mapping class="com.tut.entity.ManyToMany.Emp"/>
                 <mapping class="com.tut.entity.ManyToMany.Project"/>
 

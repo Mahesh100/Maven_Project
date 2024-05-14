@@ -1,14 +1,11 @@
 package com.tut;
 
-import com.tut.entity.Address;
-import com.tut.entity.Certificate;
-import com.tut.entity.Student;
+import com.tut.entity.EmbeddableExe.Address;
+import com.tut.entity.EmbeddableExe.Student;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import javax.imageio.stream.FileImageInputStream;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Date;

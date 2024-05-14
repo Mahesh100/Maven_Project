@@ -1,4 +1,4 @@
-package com.tut.entity;
+package com.tut.entity.EmbeddableExe;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

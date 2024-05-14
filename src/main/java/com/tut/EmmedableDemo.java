@@ -1,7 +1,7 @@
 package com.tut;
 
-import com.tut.entity.Certificate;
-import com.tut.entity.Student;
+import com.tut.entity.EmbeddableExe.Certificate;
+import com.tut.entity.EmbeddableExe.Student;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;

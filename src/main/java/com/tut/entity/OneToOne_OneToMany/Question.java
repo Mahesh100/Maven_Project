@@ -1,4 +1,4 @@
-package com.tut.entity;
+package com.tut.entity.OneToOne_OneToMany;
 
 import javax.persistence.*;
 import java.util.List;
@@ -20,7 +20,7 @@ public class Question {
     One-To-Many relationship ( One question have many answers )
 
      */
-    @OneToMany ///(mappedBy = "question")
+    @OneToMany (mappedBy = "question", fetch = FetchType.EAGER)
   //  @JoinColumn(name = "Id_of_answer")      //for renaming
     private List<Answer> answer;
 

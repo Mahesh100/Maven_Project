@@ -1,7 +1,7 @@
 package com.tut;
 
-import com.tut.entity.Answer;
-import com.tut.entity.Question;
+import com.tut.entity.OneToOne_OneToMany.Answer;
+import com.tut.entity.OneToOne_OneToMany.Question;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -52,12 +52,22 @@ public class OneToOneDemo {
 
 
         // Save objects here
-
-       // s.save(ans);
+// Comment this if want to use lazy and eager loading
+        s.save(ans);
         s.save(qt);
         s.save(ans);
         s.save(ans2);
         s.save(ans3);
+
+        Question q = s.get(Question.class,1212);
+        System.out.println(q.getQuestion());
+        System.out.println(q.getQuestion_id());
+
+      //  System.out.println(q.getAnswer().size());
+
+//        for(Answer a:q.getAnswer()){
+//            System.out.println(a.getAnswer());
+//        }
 
         tx.commit();
         s.close();

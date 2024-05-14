@@ -1,6 +1,4 @@
-package com.tut.entity;
-
-import net.bytebuddy.implementation.bind.annotation.Super;
+package com.tut.entity.OneToOne_OneToMany;
 
 import javax.persistence.*;
 

@@ -1,7 +1,6 @@
-package com.tut.entity;
+package com.tut.entity.EmbeddableExe;
 
 import javax.persistence.*;
-import javax.xml.crypto.Data;
 import java.util.Arrays;
 import java.util.Date;
 
