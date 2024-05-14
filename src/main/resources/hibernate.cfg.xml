@@ -14,6 +14,8 @@
         <property name= "show_sql"> true </property>
                 <mapping class="com.tut.entity.Student"/>
                 <mapping class="com.tut.entity.Address"/>
-<!--                <mapping class="com.tut.entity.Certificate"/>-->
+                <mapping class="com.tut.entity.Answer"/>
+                <mapping class="com.tut.entity.Question"/>
+
         </session-factory>
         </hibernate-configuration>
