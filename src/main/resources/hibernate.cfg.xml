@@ -16,6 +16,8 @@
                 <mapping class="com.tut.entity.Address"/>
                 <mapping class="com.tut.entity.Answer"/>
                 <mapping class="com.tut.entity.Question"/>
+                <mapping class="com.tut.entity.ManyToMany.Emp"/>
+                <mapping class="com.tut.entity.ManyToMany.Project"/>
 
         </session-factory>
         </hibernate-configuration>
