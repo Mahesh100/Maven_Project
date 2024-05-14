@@ -18,9 +18,9 @@ public class FetchDemo {
 
         Student student= session.get(Student.class,108);
 
-//        System.out.println(student);
 
-        System.out.println("Get data is"+ student);
+
+        System.out.println("Get data is: "+ student);
       //  session.close();
        // factory.close();
     }

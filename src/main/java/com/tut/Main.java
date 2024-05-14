@@ -1,6 +1,7 @@
 package com.tut;
 
 import com.tut.entity.Address;
+import com.tut.entity.Certificate;
 import com.tut.entity.Student;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -44,6 +45,10 @@ public class Main {
         st.setCity("abad");
         System.out.println(st);
 
+//        Certificate certi = new Certificate();
+//        certi.setCourse("Java");
+//        certi.setDuration("1");
+//        st.setCertificate(certi);
 
         Address ad = new Address();
 
@@ -67,6 +72,7 @@ public class Main {
 
         session.save(ad);
         session.save(st);
+   //     session.save(certi);
         session.getTransaction().commit();
         session.close();
         System.out.println("Done");
